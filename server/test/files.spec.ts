@@ -33,7 +33,6 @@ describe("File API Tests", () => {
     chai
       .request(app)
       .post("/api/files")
-      // No se adjunta ningún archivo en esta solicitud
       .end((err, res) => {
         expect(res).to.have.status(400);
         expect(res.body.message).to.equal("No CSV file provided.");

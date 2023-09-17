@@ -14,7 +14,6 @@ const UpdateFile = () => {
       return;
     }
 
-    // Check if the selected file is not a CSV
     if (file.name.slice(-4) !== ".csv") {
       alert("Only CSV files are allowed.");
       return;
